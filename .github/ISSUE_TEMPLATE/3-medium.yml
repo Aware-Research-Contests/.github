@@ -1,0 +1,46 @@
+name: Medium severity finding
+description: Report a medium severity vulnerability. One issue per finding.
+labels: ["medium"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        File **one issue per finding**, with a short title that names the problem, e.g. `Reentrancy in withdraw() lets anyone drain the vault`.
+
+        The **medium** label on this issue records the severity you claim. If it's wrong, change the label (Labels, on the right) before the deadline.
+        Edits and label changes made after the deadline are ignored, and closing the issue withdraws it.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One or two sentences on what is wrong and what it allows.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Vulnerability details
+      description: The root cause, with links to the affected lines (GitHub permalinks or file and line numbers).
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: What an attacker gains or what users lose, and under which conditions.
+    validations:
+      required: true
+  - type: textarea
+    id: poc
+    attributes:
+      label: Proof of concept
+      description: A test or step-by-step scenario that demonstrates the issue. Use code blocks for code.
+    validations:
+      required: false
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Recommended mitigation
+      description: How the issue could be fixed.
+    validations:
+      required: false

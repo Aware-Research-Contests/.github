@@ -1,0 +1,2 @@
+# Researchers must pick a severity template; there is no blank issue option.
+blank_issues_enabled: false
