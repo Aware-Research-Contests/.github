@@ -1,6 +1,18 @@
 name: Finding
-description: Report a vulnerability. One issue per finding; set its severity label.
+description: Report a vulnerability. One issue per finding.
 body:
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: The severity you claim for this finding.
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
   - type: textarea
     id: summary
     attributes:
