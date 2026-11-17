@@ -1,14 +1,6 @@
-name: High severity finding
-description: Report a high severity vulnerability. One issue per finding.
-labels: ["high"]
+name: Finding
+description: Report a vulnerability. One issue per finding; set its severity label.
 body:
-  - type: markdown
-    attributes:
-      value: |
-        File **one issue per finding**, with a short title that names the problem, e.g. `Reentrancy in withdraw() lets anyone drain the vault`.
-
-        The **high** label on this issue records the severity you claim. If it's wrong, change the label (Labels, on the right) before the deadline.
-        Edits and label changes made after the deadline are ignored, and closing the issue withdraws it.
   - type: textarea
     id: summary
     attributes:
